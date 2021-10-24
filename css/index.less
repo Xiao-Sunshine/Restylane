@@ -1,0 +1,846 @@
+// 初始化样式
+img {
+    height: auto;
+    /* 移动设备中 长按图片会自动保存 阻止长按图片保存 */
+    pointer-events: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+input,
+select {
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+div {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    background: #90dfdf;
+    position: relative;
+    // overflow: hidden;
+}
+
+.dn {
+    display: none;
+}
+
+
+.index {
+    width: 100vw;
+    height: 3497px;
+    position: absolute;
+    // background: url(../img/bj.png);
+    overflow: hidden;
+}
+
+.bj {
+    top: 0;
+    left: 0;
+}
+
+// 星星
+.stat {
+    top: 520px;
+    left: 76px;
+    position: absolute;
+}
+
+// 气球
+.top-balloon {
+    top: 383px;
+    left: 0;
+}
+
+// 上
+.item1 {
+    position: absolute;
+    height: 1121px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.l(@width, @top) {
+    top: @top;
+    left: 50%;
+    position: absolute;
+    margin-left: -@width/2px;
+}
+
+.top-logo {
+    .l(300px, 82px);
+}
+
+.top-title {
+    width: 464px;
+    height: 0;
+    overflow: hidden;
+    .l(464px, 230px);
+
+}
+
+.top-title-bj {
+    .l(750px, 0px);
+}
+
+.top-silk {
+    top: 261px;
+    left: 185px;
+    height: 540px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.top-box {
+    left: 0;
+    top: 588px;
+    position: absolute;
+}
+
+.top-frame-right {
+    top: 92px;
+    left: 60px;
+    opacity: 0;
+}
+
+.top-frame-text {
+    left: 55px;
+    top: 278px;
+}
+
+.top-silk2 {
+    top: 605px;
+    left: 0px;
+    width: 750px;
+    overflow: hidden;
+    position: absolute;
+}
+
+// 中
+.item2 {
+    position: absolute;
+    height: 1063px;
+    width: 100vw;
+    top: 1121px;
+    left: 0;
+}
+
+.conter-box {
+    width: 327px;
+    height: 327px;
+    top: 173px;
+    right: 34px;
+    opacity: 0;
+    position: absolute;
+}
+
+.conter-circle-text {
+    .l(151px, 80px)
+}
+
+.conter-circle-text1 {
+    top: 191px;
+    left: 50%;
+    position: absolute;
+    margin-left: -90px;
+}
+
+.conter-silk {
+    top: 462px;
+    left: 0;
+    height: 340px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.conter-re {
+    left: 181px;
+    top: 0;
+    opacity: 0;
+}
+
+.conter-xin {
+    top: 632px;
+    left: -23px;
+    width: 505px;
+    height: 432px;
+    position: absolute;
+}
+
+.conter-x {
+    top: -190px;
+    left: 0;
+}
+
+.conter-xin-text2 {
+    top: 178px;
+    left: 174px;
+}
+
+.conter-xin-text {
+    top: 100px;
+    left: 225px;
+}
+
+.conter-xin1 {
+    top: 977px;
+    right: 198px;
+}
+
+.item3 {
+    position: absolute;
+    height: 1315px;
+    width: 100vw;
+    top: 2183px;
+    left: 0;
+}
+
+.conter-xin2 {
+    right: 79px;
+    top: 1107px;
+}
+
+.conter-silk1 {
+    top: 1020px;
+    left: 137px;
+    width: 411px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.conter-balloon {
+    top: 210px;
+    left: 199px;
+    position: absolute;
+    width: 362px;
+    height: 977px;
+}
+
+.button-balloon-text {
+    .l(283px, 174px)
+}
+
+.button-iceCream {
+    position: absolute;
+    top: 959px;
+    left: 99px;
+}
+
+.button-house {
+    position: absolute;
+    top: 812px;
+    left: 280px;
+    width: 383px;
+}
+
+.button-house-text {
+    .l(161px, 198px)
+}
+
+.button-iceCream-bj {
+    top: -13px;
+    left: -16px;
+}
+
+// 生成海报
+.poster {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bj.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .top-box {
+        top: 0;
+        left: 26px;
+
+        .top-frame-text {
+            top: 174px;
+            left: 90px;
+        }
+    }
+}
+
+.conter {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rule-start {
+    right: 0;
+    top: 170px;
+}
+
+.rule-silk {
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.rule-interlayer-title {
+    width: 176px;
+    height: 66px;
+    .l(176px, 468px)
+}
+
+.sentenceMaking {
+    width: 439px;
+    height: 468px;
+    .l(439px, 644px);
+    background: url(../img/rule-sentenceMaking-bj.png) no-repeat;
+}
+
+.sentenceMaking-conter {
+    width: 439px;
+    height: 468px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.rule-sentenceMaking-y1 {
+    top: 82px;
+    left: 46px;
+}
+
+.rule-sentenceMaking-y {
+    top: 368px;
+    left: 358px;
+}
+
+.rule-sentenceMaking-text1 {
+    top: 130px;
+    left: 86px;
+}
+
+.rule-sentenceMaking-text2 {
+    top: 258px;
+    left: 86px;
+}
+
+.rule-sentenceMaking-border {
+    left: 86px;
+    top: 290px;
+}
+
+.rule-sentenceMaking-text3,
+.rule-sentenceMaking-text4,
+.rule-sentenceMaking-text5 {
+    position: absolute;
+    top: 314px;
+    width: 72px;
+    height: 32px;
+}
+
+.rule-sentenceMaking-text3 {
+    left: 96px;
+}
+
+.rule-sentenceMaking-text4 {
+    left: 180px;
+}
+
+.rule-sentenceMaking-text5 {
+    left: 264px;
+}
+
+.rule-btn {
+    width: 299px;
+    height: 100px;
+    position: absolute;
+    top: 1220px;
+    left: 189px;
+}
+
+.rule-transmit {
+    right: 30px;
+    top: 32px;
+    width: 93px;
+    height: 81px;
+    position: absolute;
+    z-index: 99;
+}
+
+//规则说明
+.popUp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.rule {
+    width: 497px;
+    height: 720px;
+    position: absolute;
+    top: 412px;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -(497px/2);
+
+    .rule-interlayer-title {
+        .l(176px, 53px)
+    }
+}
+
+.rule-x {
+    top: 25px;
+    right: 45px;
+    width: 24px;
+    height: 27px;
+    position: absolute;
+}
+
+.rule-interlayer-text1 {
+    .l(244px, 225px)
+}
+
+.rule-interlayer-text2 {
+    .l(270px, 273px)
+}
+
+.rule-interlayer-text3 {
+    .l(268px, 371px)
+}
+
+.rule-interlayer-text4 {
+    .l(244px, 432px)
+}
+
+.rule-interlayer-text5 {
+    .l(254px, 539px)
+}
+
+.rule-interlayer-text6 {
+    .l(144px, 610px)
+}
+
+// 上传图片
+.uploading {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/rankingList-bj.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.uploading-start {
+    left: 36px;
+    top: 52px;
+}
+
+.uploading-silk {
+    top: 0;
+    right: 0;
+}
+
+.uploading-box {
+    width: 503px;
+    height: 841px;
+    .l(503px, 276px)
+}
+
+.uploading-b {
+    width: 503px;
+    height: 841px;
+    .l(503px, 276px)
+}
+
+.uploading-picture {
+    left: 126px;
+    top: 276px;
+    width: 497px;
+    height: 866px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.uploading-picture img {
+    pointer-events: auto;
+    z-index: 10;
+    position: relative;
+}
+
+.uploading-camera {
+    width: 50px;
+    height: 54px;
+    bottom: -27px;
+    left: 50%;
+    margin-left: -50px/2;
+    z-index: 10;
+}
+
+// 照片样式
+.photograph {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    ul {
+        width: 513px;
+        height: 98px;
+        .l(513px, 158px);
+        position: absolute;
+        display: flex;
+
+        li:nth-of-type(1) {
+            img:nth-of-type(1) {
+                top: 17px;
+                left: 30px;
+            }
+        }
+
+        li {
+            flex: 1;
+            width: 90px;
+            position: relative;
+            background: url(../img/uploading-barder.png) no-repeat;
+
+            img:nth-of-type(1) {
+                top: 17px;
+                left: 19px;
+            }
+
+            img:nth-of-type(2) {
+                width: 43px;
+                height: 46px;
+                top: 50%;
+                left: 50%;
+                margin-top: -46px/2;
+                margin-left: -43px/2;
+            }
+        }
+    }
+
+
+
+}
+
+.photograph-input {
+    width: 50px;
+    height: 45px;
+    overflow: hidden;
+    position: absolute;
+    top: 1095px;
+    left: 50%;
+    z-index: 10;
+    margin-left: -50px/2;
+
+    input {
+        width: 70px;
+        height: 65px;
+        position: absolute;
+        top: -10px;
+        font: 0px arial, transparent !important;
+        color: transparent !important;
+        background: transparent !important;
+    }
+}
+
+// 相册 1
+.uploading-text1 {
+    right: 21px;
+    top: 47px;
+    z-index: 10;
+}
+
+// 相册 2
+.uploading-text2-top {
+    top: 31px;
+    left: 35px;
+    z-index: 10;
+}
+
+.uploading-text2-botton {
+    bottom: 27px;
+    left: 50%;
+    position: absolute;
+    margin-left: -185px;
+    z-index: 10;
+}
+
+// 相册 3
+.uploading-text3-top {
+    top: 17px;
+    left: 13px;
+    z-index: 10;
+}
+
+.uploading-text3-botton {
+    top: 636px;
+    left: 105px;
+    z-index: 10;
+}
+
+// 相册 4
+.uploading-text4-top {
+    top: 617px;
+    left: 10px;
+    z-index: 10;
+}
+
+.uploading-text4-botton {
+    top: 731px;
+    right: 105px;
+    z-index: 10;
+}
+
+// 相册 5
+.uploading-text5-top {
+    top: 37px;
+    left: 105px;
+    z-index: 10;
+}
+
+.uploading-text5-botton {
+    top: 629px;
+    right: 45px;
+    z-index: 10;
+}
+
+.share {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/share-bJ.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// 分享页
+.share-btn {
+    width: 75px;
+    height: 45px;
+    right: 37px;
+    top: 40px;
+    position: absolute;
+}
+
+.share-save {
+    width: 298px;
+    height: 100px;
+    top: 1221px;
+    left: 70px;
+    position: absolute;
+}
+
+.share-ranking {
+    width: 298px;
+    height: 100px;
+    top: 1221px;
+    left: 362px;
+    position: absolute;
+}
+
+// 排行榜
+.rankingList {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .share-ranking {
+        top: 84px;
+        left: 216px;
+    }
+
+    .rankingList-start {
+        top: 64px;
+        right: 15px;
+    }
+
+    .rankingList-playBtn {
+        width: 298px;
+        height: 100px;
+        top: 1275px;
+        left: 220px;
+        position: absolute;
+    }
+
+    ul {
+        width: 597px;
+        height: 1015px;
+        left: 82px;
+        top: 222px;
+        position: absolute;
+
+        li:nth-of-type(1),
+        li:nth-of-type(2),
+        li:nth-of-type(3) {
+            span:nth-of-type(3) {
+                font-size: 37px;
+                color: #82ccd4;
+                left: 305px;
+                top: 37px;
+                position: absolute;
+            }
+        }
+
+        li {
+            width: 100%;
+            height: 130px;
+            line-height: 133px;
+            margin-bottom: 43px;
+            background-color: rgba(255, 255, 255, .8);
+            border: 1px solid #fff;
+            border-radius: 25px;
+            position: relative;
+
+            span:nth-of-type(1)>img {
+                vertical-align: middle;
+            }
+
+            span:nth-of-type(2) {
+                font-size: 25px;
+                margin-left: 153px;
+            }
+
+            span:nth-of-type(3) {
+                font-size: 37px;
+                color: #82ccd4;
+                left: 315px;
+                position: absolute;
+            }
+
+            span:nth-of-type(4) {
+                font-size: 33px;
+                color: #28528a;
+                position: absolute;
+                left: 417px;
+            }
+
+            span:nth-of-type(5) {
+                right: 55px;
+                top: 44px;
+                width: 44px;
+                height: 43px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+// 排行榜弹窗
+.ranking {
+    width: 488px;
+    height: 201px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -201px/2;
+    margin-left: -488px/2;
+
+    .ranking-text {
+        text-indent: 1em;
+        font-size: 29px;
+        position: absolute;
+        font-family: Adobe 黑体 Std;
+        width: 416px;
+        .l(416px, 49px)
+    }
+
+    .share-btn {
+        width: 75px;
+        height: 45px;
+        top: 155px;
+        position: absolute;
+        left: 50%;
+        margin-left: -37.5px;
+    }
+}
+
+@media screen and (max-height:1290px) {
+    .rule {
+        height: 720px;
+        top: 50%;
+        margin-top: -720px/2;
+    }
+    .conter {
+        overflow: hidden;
+        height: 1396px;
+    }
+
+    .photograph {
+        overflow: hidden;
+
+        .conter {
+            transform: scaleY(.85);
+            top: -103px;
+        }
+    }
+
+    .poster {
+        .conter {
+            transform: scaleY(.90);
+            top: -70px;
+        }
+    }
+
+    .photograph {
+
+        .share-save,
+        .share-ranking,
+        .rule-btn {
+            top: 1020px;
+
+        }
+    }
+
+    .photograph-input {
+        top: 930px;
+    }
+
+    .uploading {
+        overflow: hidden;
+
+        .conter {
+            transform: scaleY(.85);
+            top: -86px;
+        }
+    }
+
+    .rankingList {
+        .conter {
+            transform: scaleY(.85);
+            top: -103px;
+        }
+    }
+
+    .uploading-picture {
+        top: 279px;
+        height: 835px;
+    }
+
+    .uploading-silk {
+        top: -5px;
+        right: 0;
+    }
+}
