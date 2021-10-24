@@ -13,7 +13,7 @@
 
 <body>
     <!-- 首页 -->
-    <div class="index ">
+    <div class="index dn">
         <!-- bj -->
         <img src="./img/bj.png" class="bj">
         <!-- 气球 -->
@@ -155,13 +155,10 @@
             <img src="img/rule-start.png" class="rule-start">
         </div>
     </div>
-
-
-
     <!-- 上传图片 -->
     <div class="uploading dn">
         <div class="conter">
-            
+
         </div>
     </div>
     <!-- 分享页 -->
@@ -178,7 +175,7 @@
         </div>
     </div>
     <!-- 照片样式 -->
-    <div class="photograph dn">
+    <div class="photograph ">
         <div class="conter">
             <!-- 星星 -->
             <img src="img/uploading-start.png" class="uploading-start">
@@ -207,12 +204,14 @@
                     <img src="img/uploading-checked.png" class="dn uploading-checked">
                 </li>
             </ul>
+
             <!-- 相片框 -->
             <img src="img/uploading-border.png" class="uploading-b">
             <!-- 图片 -->
             <div class="uploading-picture ">
-                <img src="" class="draggable">
+                <img src="" crossorigin=“anonymous” class="draggable">
             </div>
+
             <div class="uploading-box">
                 <!-- 相片框 1-->
                 <div class="uploading-border ">
@@ -261,10 +260,56 @@
         <div class="share-save dn">
             <img src="img/share-save.png">
         </div>
+
         <!-- 排行榜 -->
         <div class="share-ranking dn">
             <img src="img/share-ranking.png" alt="">
         </div>
+    </div>
+    <!-- 合成图片 -->
+    <div class="compound">
+        <div class="conter">
+            <!-- 图片合成 -->
+            <img src="" class="result-img">
+            <!-- 相片框 -->
+            <img src="img/uploading-border.png" class="uploading-b">
+            <!-- 图片 -->
+            <div class="uploading-picture ">
+                <img src="" crossorigin=“anonymous” class="draggable">
+            </div>
+            <div class="uploading-box">
+                <!-- 相片框 1-->
+                <div class="uploading-border ">
+                    <img src="img/uploading-text1.png" class="uploading-text1">
+                    <img src="img/uploading-camera.png" class="uploading-camera">
+                </div>
+                <!-- 相片框 2-->
+                <div class="uploading-border dn">
+                    <img src="img/uploading-text2-top.png" class="uploading-text2-top">
+                    <img src="img/uploading-text2-botton.png" class="uploading-text2-botton">
+                    <img src="img/uploading-camera.png" class="uploading-camera">
+                </div>
+                <!-- 相片框 3-->
+                <div class="uploading-border dn">
+                    <img src="img/uploading-text3-top.png" class="uploading-text3-top">
+                    <img src="img/uploading-text3-botton.png" class="uploading-text3-botton">
+                    <img src="img/uploading-camera.png" class="uploading-camera">
+                </div>
+                <!-- 相片框 4-->
+                <div class="uploading-border dn">
+                    <img src="img/uploading-text4-top.png" class="uploading-text4-top">
+                    <img src="img/uploading-text4-botton.png" class="uploading-text4-botton">
+                    <img src="img/uploading-camera.png" class="uploading-camera">
+                </div>
+                <!-- 相片框 5-->
+                <div class="uploading-border dn">
+                    <img src="img/uploading-text5-top.png" class="uploading-text5-top">
+                    <img src="img/uploading-text5-botton.png" class="uploading-text5-botton">
+                    <img src="img/uploading-camera.png" class="uploading-camera">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- 排行榜 -->
@@ -351,6 +396,7 @@
             </div>
         </div>
     </div>
+    <!-- 弹窗 -->
     <div class="popUp dn">
         <!-- 规则说明 -->
 
@@ -384,6 +430,7 @@
     </div>
 
 </body>
+<script src="js/html2canvas.min.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/dragScript.js"></script>
 <script src="js/index.js"></script>

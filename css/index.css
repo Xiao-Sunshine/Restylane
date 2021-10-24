@@ -683,6 +683,17 @@ html {
   left: 50%;
   margin-left: -37.5px;
 }
+.compound {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.compound .result-img {
+  opacity: 0;
+}
 @media screen and (max-height: 1290px) {
   .rule {
     height: 720px;
@@ -691,21 +702,24 @@ html {
   }
   .conter {
     overflow: hidden;
-    height: 1396px;
+    height: 1412px;
   }
-  .photograph {
-    overflow: hidden;
-  }
+  .compound .conter,
   .photograph .conter {
+    overflow: hidden;
+    height: 1417px;
     transform: scaleY(0.85);
-    top: -103px;
+    top: -107px;
   }
   .poster .conter {
     transform: scaleY(0.9);
     top: -70px;
   }
+  .compound .share-save,
   .photograph .share-save,
+  .compound .share-ranking,
   .photograph .share-ranking,
+  .compound .rule-btn,
   .photograph .rule-btn {
     top: 1020px;
   }

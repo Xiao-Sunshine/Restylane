@@ -777,23 +777,39 @@ html {
     }
 }
 
+// 合成图片
+.compound {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    .result-img {
+        opacity: 0;
+    }
+}
+
 @media screen and (max-height:1290px) {
     .rule {
         height: 720px;
         top: 50%;
         margin-top: -720px/2;
     }
+
     .conter {
         overflow: hidden;
-        height: 1396px;
+        height: 1412px;
     }
 
+    .compound,
     .photograph {
-        overflow: hidden;
-
         .conter {
-            transform: scaleY(.85);
-            top: -103px;
+            overflow: hidden;
+            height: 1417px;
+            transform: scaleY(0.85);
+            top: -107px;
         }
     }
 
@@ -804,6 +820,7 @@ html {
         }
     }
 
+    .compound,
     .photograph {
 
         .share-save,

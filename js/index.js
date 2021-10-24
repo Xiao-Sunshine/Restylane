@@ -54,19 +54,32 @@ $(function () {
             success: function (res) {
                 if (res.status == 200) {
                     $('.uploading-b').fadeIn();
-                    $('.photograph-input').fadeIn();
+                    // $('.photograph-input').fadeIn();
                     $('.uploading-picture').fadeIn();
                     $('.uploading-picture img').attr('src', 'http://www.liulongbin.top:3006' + res.url);
+                    //合成图片的js代码
+                        html2canvas(document.querySelector(".compound"), {
+                            useCORS:true,
+                            //使用看到的宽高作为图片的宽高
+                            width: window.innerWidth,
+                            height: window.innerHeight,
+                        }).then(canvas => {
+                            //合成图片放到img中
+                            let src = canvas.toDataURL();
+                            // console.log(src);
+                            $('.result-img').prop('src', src)
+                        });
                 } else {
                     console.log("添加文件失败!");
                 }
             }
         })
-        // 点击图片
+        // 确认上传
         $(".photograph .rule-btn").click(function () {
             $('.share-ranking').fadeIn();
             $('.share-save').fadeIn();
             $('.photograph .rule-btn').fadeOut();
+            $('.photograph .uploading-silk').fadeOut();
             $('.photograph ul').fadeOut();
             $('.share').fadeIn();
             $('.uploading-box').fadeIn();
@@ -129,5 +142,9 @@ $(function () {
         $('.uploading-picture').fadeIn();
         $('.photograph').fadeIn();
     })
+    $('.rankingList').click(function(){
+
+    })
+
 })
 
