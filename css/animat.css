@@ -1,3 +1,14 @@
+.item-conter-start {
+  animation: itemContertStart 20s linear infinite;
+}
+@keyframes itemContertStart {
+  0% {
+    top: -2968px;
+  }
+  100% {
+    top: 1300px;
+  }
+}
 .rankingList-start,
 .uploading-start,
 .uploading-start,
@@ -124,24 +135,31 @@
     opacity: 1;
   }
 }
+.item-conter .conter-re,
 .item2-animat .conter-re {
-  animation: flipInY 2s 3s both;
+  animation: flipInY 2s 1s both;
 }
+.item-conter .conter-box,
 .item2-animat .conter-box {
-  animation: conterbox 3s 3.5s both;
+  animation: conterbox 3s 3s both;
 }
+.item-conter .conter-silk,
 .item2-animat .conter-silk {
-  animation: conterSilk 4s 2s both;
+  animation: conterSilk 4s both;
 }
+.item-conter .conter-xin1,
 .item2-animat .conter-xin1 {
   animation: conteXrin1 2s 3.5s both;
 }
+.item-conter .conter-xin2,
 .item2-animat .conter-xin2 {
   animation: conteXrin2 2s 4s both;
 }
+.item-conter .conter-xin,
 .item2-animat .conter-xin {
   animation: conterXin 2s both;
 }
+.item-conter .conter-silk1,
 .item2-animat .conter-silk1 {
   animation: conterSilk1 3s 3s both;
 }
@@ -323,7 +341,7 @@
   }
 }
 .rule-transmit {
-  animation: fadeInTopRight 1s both;
+  animation: fadeInTopRight 2s both;
 }
 @keyframes fadeInTopRight {
   from {
@@ -466,4 +484,133 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+.item-conter .conter-re {
+  animation: flipInY 2s 3s both;
+}
+.item-conter .conter-box {
+  animation: conterbox 3s 3.5s both;
+}
+.item-conter .conter-silk {
+  width: 100%;
+  height: 1333px;
+  top: 0;
+  left: 0;
+  animation: conterSilk 4s 2s both;
+}
+.item-conter .rule-transmit {
+  animation: fadeInTopRight 2s 6s both;
+}
+.item-conter .item2-label-text {
+  animation: backInLeft 2s 7.5s both;
+}
+.item-conter .item2-btn {
+  animation: backInRight 2s 7.5s both;
+}
+.item-conter .label1 > li:nth-of-type(2),
+.item-conter .label1 > li:nth-of-type(3) {
+  animation: rollIn 2s 6s both;
+}
+.item-conter .label1 > li:nth-of-type(1),
+.item-conter .label1 > li:nth-of-type(4) {
+  animation: rollIn2 2s 6s both;
+}
+.item-conter .labelLiOut {
+  animation: rollOut 3s both !important;
+}
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+}
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes rollIn2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.code,
+.tear {
+  animation: rollIn 2s both;
+}
+.code .item2-text1,
+.tear .item2-text1 {
+  animation: backInLeft 2s 2s both;
+}
+.code .item2-text2,
+.tear .item2-text2 {
+  animation: backInRight 2s 2s both;
+}
+.code .item2-interlayer-btn,
+.tear .item2-interlayer-btn {
+  animation: jackInTheBox 2s 3s both;
+}
+.tearOut {
+  animation: tearOut 3s ease-out both;
+}
+@keyframes tearOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(200%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(200%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.portrayal li,
+.portrayal .portrayal-border {
+  animation: jackInTheBox 3s both;
+}
+.portrayal .text2 {
+  animation: backInLeft 3s both;
+}
+.portrayal .text3 {
+  animation: backInRight 3s both;
 }

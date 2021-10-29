@@ -1,6 +1,7 @@
 var topTitle = null;
 $(function () {
     topTitle = $('.top-title')[0].getBoundingClientRect().top;
+    // 上
     // 首页->生成海报
     $('.item1').click(function () {
         $('.index').fadeOut();
@@ -31,7 +32,6 @@ $(function () {
     })
     $('.photograph-input input').change(function () {
         var files = $('.photograph-input input')[0].files;
-        console.log(files);
         if (files.length <= 0) {
             return alert('请选择文件!');
         }
@@ -58,17 +58,17 @@ $(function () {
                     $('.uploading-picture').fadeIn();
                     $('.uploading-picture img').attr('src', 'http://www.liulongbin.top:3006' + res.url);
                     //合成图片的js代码
-                        html2canvas(document.querySelector(".compound"), {
-                            useCORS:true,
-                            //使用看到的宽高作为图片的宽高
-                            width: window.innerWidth,
-                            height: window.innerHeight,
-                        }).then(canvas => {
-                            //合成图片放到img中
-                            let src = canvas.toDataURL();
-                            // console.log(src);
-                            $('.result-img').prop('src', src)
-                        });
+                    html2canvas(document.querySelector(".compound"), {
+                        useCORS: true,
+                        //使用看到的宽高作为图片的宽高
+                        width: window.innerWidth,
+                        height: window.innerHeight,
+                    }).then(canvas => {
+                        //合成图片放到img中
+                        let src = canvas.toDataURL();
+                        // console.log(src);
+                        $('.result-img').prop('src', src)
+                    });
                 } else {
                     console.log("添加文件失败!");
                 }
@@ -122,8 +122,6 @@ $(function () {
 
     var topTitleTop = $('.top-title')[0].offsetTop;
     var conterXin = $('.conter-xin')[0].offsetTop + $('.item1')[0].offsetHeight;
-    console.log(conterXin);
-    console.log($(document).scrollTop());
     mover('.item2', 'item2-animat', topTitleTop);
     mover('.item3', 'item3-animat', conterXin);
     function mover(item, itemAnimat, topTitleTop) {
@@ -142,9 +140,104 @@ $(function () {
         $('.uploading-picture').fadeIn();
         $('.photograph').fadeIn();
     })
-    $('.rankingList').click(function(){
+    $('.rankingList').click(function () {
 
     })
+    // 中
+    var layer = layui.layer;
+    // 解压撕标签墙
+    $('.item2').click(function () {
+        $('.index').fadeOut();
+        $('.popUp').fadeIn();
+        $('.tear').fadeIn();
+        $('.item-conter').fadeIn();
+    })
+    $('.label1>li').on('touchstart', function (e) {
+        var that = $(this).children('.active');
+        var startX = e.targetTouches[0].pageX;
+        $(document).on('touchmove', function (e) {
+            //获取滑动屏幕时的X,Y
+            var endX = e.originalEvent.changedTouches[0].pageX;
+            //获取滑动距离
+            var distanceX = endX - startX;
+            if (distanceX < 0 && that.index() > 0) {
+                that.addClass('labelLiOut');
+                that.prev().addClass('active');
+            } else if (that.index() == 0) {
+                return;
+            }
+        })
+    })
+    // 解压撕标签墙弹窗
+    function item2X(item2_X) {
+        item2_X.click(function () {
+            $('.popUp').fadeOut();
+            $('.tear').fadeOut();
+            $('.tear').addClass('tearOut');
+        })
+    }
+    item2X($('.tear .item2-X'));
+    item2X($('.tear .item2-interlayer-btn'));
+    //解压撕标签墙 回退
+    $('.item-conter .rule-transmit').click(function () {
+        $('.item-conter').fadeOut();
+        $('.index').fadeIn();
+    })
+    // 画像 回退
+    var num = Math.floor(Math.random() * 6);
+    console.log(num);
+    $('.portrayal .rule-transmit').click(function () {
+        console.log(123);
+        $('.portrayal').fadeOut();
+        $('.item-conter').fadeIn();
+        num = Math.floor(Math.random() * 6);
+        console.log(num);
+        number(num);
+    })
+    // 解压撕标签墙 确定按钮 
+    // 随机数
+    number(num);
 
+    function number(num) {
+        $('.item-conter .item2-btn').click(function () {
+            $('.item-conter').fadeOut();
+            $('.portrayal').fadeIn();
+            switch (num) {
+                case 0:
+                    $('.portrayal li').eq(0).removeClass('dn').siblings().addClass('dn');
+                    break;
+                case 1:
+                    $('.portrayal li').eq(1).removeClass('dn').siblings().addClass('dn');
+                    break;
+                case 2:
+                    $('.portrayal li').eq(2).removeClass('dn').siblings().addClass('dn');
+                    break;
+                case 3:
+                    $('.portrayal li').eq(3).removeClass('dn').siblings().addClass('dn');
+                    break;
+                case 4:
+                    $('.portrayal li').eq(4).removeClass('dn').siblings().addClass('dn');
+                    break;
+                case 5:
+                    $('.portrayal li').eq(5).removeClass('dn').siblings().addClass('dn');
+                    break;
+            }
+        })
+    }
+    // 点击 关注「瑞蓝爱美丽」公众号,获取更多爱美资讯 二维码出现
+    $('.text2').click(function () {
+        $('.popUp').fadeIn();
+        $('.code').fadeIn().siblings().addClass('dn');
+    })
+    //关闭二维码
+    $('.code .item2-X').click(function () {
+        $('.popUp').fadeOut();
+        $('.code').fadeOut();
+        $('.code').addClass('tearOut');
+    })
+    // 找到附近的机构
+    $('.text3').click(function(){
+        
+    })
 })
 

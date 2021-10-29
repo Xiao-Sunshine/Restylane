@@ -1,4 +1,19 @@
 // 星星
+.item-conter-start {
+    animation: itemContertStart 20s linear infinite;
+}
+
+@keyframes itemContertStart {
+    0% {
+        top: -2968px;
+    }
+
+    100% {
+        top: 1300px;
+    }
+}
+
+
 .rankingList-start,
 .uploading-start,
 .uploading-start,
@@ -172,20 +187,18 @@
     }
 }
 
-//中
-
-
+.item-conter,
 .item2-animat {
     .conter-re {
-        animation: flipInY 2s 3s both;
+        animation: flipInY 2s 1s both;
     }
 
     .conter-box {
-        animation: conterbox 3s 3.5s both;
+        animation: conterbox 3s 3s both;
     }
 
     .conter-silk {
-        animation: conterSilk 4s 2s both;
+        animation: conterSilk 4s both;
 
     }
 
@@ -241,6 +254,7 @@
         right: 79px;
     }
 }
+
 @keyframes bounceIn {
 
     from,
@@ -253,11 +267,6 @@
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-
-    //   0% {
-    //     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    //     transform: scale3d(0.3, 0.3, 0.3);
-    //   }
 
     20% {
         opacity: 1;
@@ -281,13 +290,8 @@
         -webkit-transform: scale3d(0.97, 0.97, 0.97);
         transform: scale3d(0.97, 0.97, 0.97);
     }
-
-    //   to {
-    //     opacity: 1;
-    //     -webkit-transform: scale3d(1, 1, 1);
-    //     transform: scale3d(1.1, 1.1, 1.1);
-    //   }
 }
+
 @keyframes conterXin {
     0% {
         opacity: 0;
@@ -457,7 +461,7 @@
 }
 
 .rule-transmit {
-    animation: fadeInTopRight 1s both;
+    animation: fadeInTopRight 2s both;
 }
 
 @keyframes fadeInTopRight {
@@ -639,3 +643,168 @@
         opacity: 1;
     }
 }
+
+// 中
+// 解压撕标签墙
+.item-conter {
+    .conter-re {
+        animation: flipInY 2s 3s both;
+    }
+
+    .conter-box {
+        animation: conterbox 3s 3.5s both;
+    }
+
+    .conter-silk {
+        width: 100%;
+        height: 1333px;
+        top: 0;
+        left: 0;
+        animation: conterSilk 4s 2s both;
+
+    }
+
+    .rule-transmit {
+        animation: fadeInTopRight 2s 6s both;
+    }
+
+    .item2-label-text {
+        animation: backInLeft 2s 7.5s both;
+    }
+
+    .item2-btn {
+        animation: backInRight 2s 7.5s both;
+    }
+
+    .label1>li:nth-of-type(2),
+    .label1>li:nth-of-type(3) {
+        animation: rollIn 2s 6s both;
+    }
+
+    .label1>li:nth-of-type(1),
+    .label1>li:nth-of-type(4) {
+        animation: rollIn2 2s 6s both;
+    }
+
+    .labelLiOut {
+        animation: rollOut 3s both !important;
+    }
+
+}
+
+@keyframes rollOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+}
+
+@keyframes rollIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes rollIn2 {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+// 解压撕标签墙弹窗
+.code,
+.tear {
+    animation: rollIn 2s both;
+
+    .item2-text1 {
+        animation: backInLeft 2s 2s both;
+    }
+
+    .item2-text2 {
+        animation: backInRight 2s 2s both;
+    }
+
+    .item2-interlayer-btn {
+        animation: jackInTheBox 2s 3s both;
+    }
+}
+
+.tearOut {
+    animation: tearOut 3s ease-out both;
+
+}
+
+@keyframes tearOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(200%, 0, 0) rotate3d(0, 0, 1, 120deg);
+        transform: translate3d(200%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+// 画像
+.portrayal{
+    li,
+    .portrayal-border{
+        animation: jackInTheBox 3s both;
+    }
+    .text2{
+        animation: backInLeft 3s both;
+    }
+    .text3{
+        animation: backInRight 3s both;
+    }
+}
+

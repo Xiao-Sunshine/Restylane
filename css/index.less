@@ -373,8 +373,8 @@ html {
 }
 
 .rule-transmit {
-    right: 30px;
-    top: 32px;
+    right: 22px;
+    top: 24px;
     width: 93px;
     height: 81px;
     position: absolute;
@@ -388,6 +388,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
     background-color: rgba(0, 0, 0, .3);
 }
 
@@ -473,9 +474,9 @@ html {
 
 .uploading-picture {
     left: 126px;
-    top: 276px;
+    top: 279px;
     width: 497px;
-    height: 866px;
+    height: 835px;
     position: absolute;
     overflow: hidden;
 }
@@ -498,10 +499,10 @@ html {
 // 照片样式
 .photograph {
     width: 100%;
-    height: 100%;
+    height: 1424px;
     top: 0;
     left: 0;
-
+overflow: hidden;
     ul {
         width: 513px;
         height: 98px;
@@ -535,6 +536,11 @@ html {
                 margin-top: -46px/2;
                 margin-left: -43px/2;
             }
+        }
+
+        .uploading-start {
+            left: 0px;
+            top: -300px;
         }
     }
 
@@ -788,6 +794,305 @@ html {
 
     .result-img {
         opacity: 0;
+        z-index: 999;
+    }
+}
+
+// 中
+// 解压撕标签墙
+.item-conter {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    .conter-box {
+        top: 32px;
+        right: 64px;
+    }
+
+    .conter-silk {
+        width: 100%;
+        height: 1333px;
+        top: -20px;
+        left: 0;
+    }
+
+    .conter-re {
+        top: 50px;
+        left: 108px;
+    }
+
+    .item-conter-start {
+        top: -2968px;
+        left: 36px;
+    }
+
+    .label1 {
+        width: 688px;
+        height: 579px;
+        left: 38px;
+        top: 502px;
+        position: absolute;
+
+        li {
+            position: absolute;
+            width: 339px;
+            height: 241px;
+
+            .active {
+                display: block;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        li:nth-of-type(1) {
+            right: 0;
+            top: 0;
+        }
+
+        li:nth-of-type(2) {
+            left: 0px;
+            top: 115px;
+        }
+
+        li:nth-of-type(3) {
+            left: 0px;
+            top: 363px;
+        }
+
+        li:nth-of-type(4) {
+            right: 0px;
+            top: 256px;
+        }
+    }
+
+    .item2-label-text {
+        width: 191px;
+        height: 20px;
+        .l(119px, 1134px)
+    }
+
+    .item2-btn {
+        width: 298px;
+        height: 147px;
+        .l(298px, 1200px)
+    }
+
+}
+
+// 解压撕标签墙弹窗
+.code,
+.tear {
+    width: 497px;
+    height: 338px;
+    overflow: hidden;
+    .l(497px, 512px);
+
+    .item2-X {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 17px;
+        right: 18px;
+    }
+
+    .item2-text1 {
+        .l(203px, 51px);
+    }
+
+    .item2-text2 {
+        .l(271px, 171px);
+    }
+
+    .item2-interlayer-btn {
+        width: 130px;
+        height: 42px;
+        z-index: 10;
+        .l(130px, 291px);
+    }
+}
+
+// 画像
+.portrayal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    .portrayal-border {
+        .l(592px, 159px);
+    }
+
+    li {
+        width: 553px;
+        height: 817px;
+        top: 180px;
+        left: 50%;
+        position: absolute;
+        margin-left: -274px;
+        overflow: hidden;
+
+        .portrayal-invincible-text {
+            left: 5px;
+
+        }
+
+        .portrayal-invincible-re {
+            bottom: 0;
+            left: 0;
+
+        }
+
+    }
+
+    .text2,
+    .text3 {
+        height: 57px;
+        width: 560px;
+        // text-align: center;
+    }
+
+    .text2 {
+        .l(560px, 1058px);
+    }
+
+    .text3 {
+        .l(560px, 1137px);
+    }
+
+    .portrayal-text3 {
+        .l(175px, 15px);
+
+    }
+
+    .portrayal-text2 {
+        .l(493px, 15px);
+    }
+
+    .portrayal-stara1 {
+        top: 40px;
+        right: 40px;
+        opacity: 0;
+    }
+
+    .portrayal-stara2 {
+        left: -8px;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    // li:nth-of-type(1) {
+    //     .portrayal-invincible-re {
+    //         top: -189px;
+    //         left: -90px;
+
+    //     }
+    // }
+
+    li:nth-of-type(5),
+    li:nth-of-type(3),
+    li:nth-of-type(2) {
+        .portrayal-stara1 {
+            top: 40px;
+            left: 40px;
+        }
+
+        .portrayal-stara2 {
+            left: 218px;
+            bottom: 0;
+        }
+    }
+
+    li:nth-of-type(3) {
+        .portrayal-invincible-re {
+            left: 54px;
+
+        }
+    }
+
+    li:nth-of-type(4) {
+        .portrayal-invincible-re {
+            left: 64px;
+            bottom: 19px;
+        }
+    }
+
+    li:nth-of-type(5) {
+        .portrayal-invincible-re {
+            left: 38px;
+            bottom: 35px;
+        }
+    }
+}
+
+// 关注公众号二维码
+.item2-share-ewm {
+    width: 169px;
+    height: 169px;
+    pointer-events: auto;
+    .l(169px, 79px);
+}
+
+// 查找附近机构
+.organization {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    .organization-index {
+        position: absolute;
+        width: 558px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 25px;
+        border: 3px solid #002d72;
+        box-sizing: border-box;
+        background-color: #b1e4e3;
+
+
+        .l(558px, 86px);
+
+        input::-webkit-input-placeholder {
+            /*WebKit browsers*/
+            color: #002d72;
+
+        }
+
+        input {
+            width: 462px;
+            overflow: hidden;
+            left: 30px;
+            position: absolute;
+            font-weight: 800;
+            color: #002d72;
+            font-size: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            top: 8px;
+            // white-space: nowrap;
+            // 是强制显示为一行： 
+            // text-overflow: ellipsis;
+            // 将文本溢出显示为（…）
+            // overflow: hidden;
+            // 不用多说，溢出隐藏。 
+        }
+
+        .organization-seach {
+            right: 26px;
+            top: 16px;
+        }
     }
 }
 
@@ -807,7 +1112,7 @@ html {
     .photograph {
         .conter {
             overflow: hidden;
-            height: 1417px;
+            height: 1204px;
             transform: scaleY(0.85);
             top: -107px;
         }
@@ -832,7 +1137,7 @@ html {
     }
 
     .photograph-input {
-        top: 930px;
+        top: 909px;
     }
 
     .uploading {

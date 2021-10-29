@@ -323,8 +323,8 @@ html {
   left: 189px;
 }
 .rule-transmit {
-  right: 30px;
-  top: 32px;
+  right: 22px;
+  top: 24px;
   width: 93px;
   height: 81px;
   position: absolute;
@@ -336,6 +336,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .rule {
@@ -430,9 +431,9 @@ html {
 }
 .uploading-picture {
   left: 126px;
-  top: 276px;
+  top: 279px;
   width: 497px;
-  height: 866px;
+  height: 835px;
   position: absolute;
   overflow: hidden;
 }
@@ -451,9 +452,10 @@ html {
 }
 .photograph {
   width: 100%;
-  height: 100%;
+  height: 1424px;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 .photograph ul {
   width: 513px;
@@ -485,6 +487,10 @@ html {
   left: 50%;
   margin-top: -23px;
   margin-left: -21.5px;
+}
+.photograph ul .uploading-start {
+  left: 0px;
+  top: -300px;
 }
 .photograph-input {
   width: 50px;
@@ -693,6 +699,268 @@ html {
 }
 .compound .result-img {
   opacity: 0;
+  z-index: 999;
+}
+.item-conter {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.item-conter .conter-box {
+  top: 32px;
+  right: 64px;
+}
+.item-conter .conter-silk {
+  width: 100%;
+  height: 1333px;
+  top: -20px;
+  left: 0;
+}
+.item-conter .conter-re {
+  top: 50px;
+  left: 108px;
+}
+.item-conter .item-conter-start {
+  top: -2968px;
+  left: 36px;
+}
+.item-conter .label1 {
+  width: 688px;
+  height: 579px;
+  left: 38px;
+  top: 502px;
+  position: absolute;
+}
+.item-conter .label1 li {
+  position: absolute;
+  width: 339px;
+  height: 241px;
+}
+.item-conter .label1 li .active {
+  display: block;
+}
+.item-conter .label1 li img {
+  display: none;
+}
+.item-conter .label1 li:nth-of-type(1) {
+  right: 0;
+  top: 0;
+}
+.item-conter .label1 li:nth-of-type(2) {
+  left: 0px;
+  top: 115px;
+}
+.item-conter .label1 li:nth-of-type(3) {
+  left: 0px;
+  top: 363px;
+}
+.item-conter .label1 li:nth-of-type(4) {
+  right: 0px;
+  top: 256px;
+}
+.item-conter .item2-label-text {
+  width: 191px;
+  height: 20px;
+  top: 1134px;
+  left: 50%;
+  position: absolute;
+  margin-left: -59.5px;
+}
+.item-conter .item2-btn {
+  width: 298px;
+  height: 147px;
+  top: 1200px;
+  left: 50%;
+  position: absolute;
+  margin-left: -149px;
+}
+.code,
+.tear {
+  width: 497px;
+  height: 338px;
+  overflow: hidden;
+  top: 512px;
+  left: 50%;
+  position: absolute;
+  margin-left: -248.5px;
+}
+.code .item2-X,
+.tear .item2-X {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+}
+.code .item2-text1,
+.tear .item2-text1 {
+  top: 51px;
+  left: 50%;
+  position: absolute;
+  margin-left: -101.5px;
+}
+.code .item2-text2,
+.tear .item2-text2 {
+  top: 171px;
+  left: 50%;
+  position: absolute;
+  margin-left: -135.5px;
+}
+.code .item2-interlayer-btn,
+.tear .item2-interlayer-btn {
+  width: 130px;
+  height: 42px;
+  z-index: 10;
+  top: 291px;
+  left: 50%;
+  position: absolute;
+  margin-left: -65px;
+}
+.portrayal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.portrayal .portrayal-border {
+  top: 159px;
+  left: 50%;
+  position: absolute;
+  margin-left: -296px;
+}
+.portrayal li {
+  width: 553px;
+  height: 817px;
+  top: 180px;
+  left: 50%;
+  position: absolute;
+  margin-left: -274px;
+  overflow: hidden;
+}
+.portrayal li .portrayal-invincible-text {
+  left: 5px;
+}
+.portrayal li .portrayal-invincible-re {
+  bottom: 0;
+  left: 0;
+}
+.portrayal .text2,
+.portrayal .text3 {
+  height: 57px;
+  width: 560px;
+}
+.portrayal .text2 {
+  top: 1058px;
+  left: 50%;
+  position: absolute;
+  margin-left: -280px;
+}
+.portrayal .text3 {
+  top: 1137px;
+  left: 50%;
+  position: absolute;
+  margin-left: -280px;
+}
+.portrayal .portrayal-text3 {
+  top: 15px;
+  left: 50%;
+  position: absolute;
+  margin-left: -87.5px;
+}
+.portrayal .portrayal-text2 {
+  top: 15px;
+  left: 50%;
+  position: absolute;
+  margin-left: -246.5px;
+}
+.portrayal .portrayal-stara1 {
+  top: 40px;
+  right: 40px;
+  opacity: 0;
+}
+.portrayal .portrayal-stara2 {
+  left: -8px;
+  bottom: 0;
+  opacity: 0;
+}
+.portrayal li:nth-of-type(5) .portrayal-stara1,
+.portrayal li:nth-of-type(3) .portrayal-stara1,
+.portrayal li:nth-of-type(2) .portrayal-stara1 {
+  top: 40px;
+  left: 40px;
+}
+.portrayal li:nth-of-type(5) .portrayal-stara2,
+.portrayal li:nth-of-type(3) .portrayal-stara2,
+.portrayal li:nth-of-type(2) .portrayal-stara2 {
+  left: 218px;
+  bottom: 0;
+}
+.portrayal li:nth-of-type(3) .portrayal-invincible-re {
+  left: 54px;
+}
+.portrayal li:nth-of-type(4) .portrayal-invincible-re {
+  left: 64px;
+  bottom: 19px;
+}
+.portrayal li:nth-of-type(5) .portrayal-invincible-re {
+  left: 38px;
+  bottom: 35px;
+}
+.item2-share-ewm {
+  width: 169px;
+  height: 169px;
+  pointer-events: auto;
+  top: 79px;
+  left: 50%;
+  position: absolute;
+  margin-left: -84.5px;
+}
+.organization {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.organization .organization-index {
+  width: 558px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 25px;
+  border: 3px solid #002d72;
+  box-sizing: border-box;
+  background-color: #b1e4e3;
+  top: 86px;
+  left: 50%;
+  position: absolute;
+  margin-left: -279px;
+}
+.organization .organization-index input::-webkit-input-placeholder {
+  /*WebKit browsers*/
+  color: #002d72;
+}
+.organization .organization-index input {
+  width: 462px;
+  overflow: hidden;
+  left: 30px;
+  position: absolute;
+  font-weight: 800;
+  color: #002d72;
+  font-size: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  top: 8px;
+}
+.organization .organization-index .organization-seach {
+  right: 26px;
+  top: 16px;
 }
 @media screen and (max-height: 1290px) {
   .rule {
@@ -707,7 +975,7 @@ html {
   .compound .conter,
   .photograph .conter {
     overflow: hidden;
-    height: 1417px;
+    height: 1204px;
     transform: scaleY(0.85);
     top: -107px;
   }
@@ -724,7 +992,7 @@ html {
     top: 1020px;
   }
   .photograph-input {
-    top: 930px;
+    top: 909px;
   }
   .uploading {
     overflow: hidden;
