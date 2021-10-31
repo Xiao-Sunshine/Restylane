@@ -439,70 +439,16 @@ html {
 }
 
 // 上传图片
+
 .uploading {
     width: 100vw;
-    height: 100vh;
+    height: 1424px;
     background: url(../img/rankingList-bj.png);
     position: absolute;
     top: 0;
     left: 0;
-
-
-}
-
-.uploading-start {
-    left: 36px;
-    top: 52px;
-}
-
-.uploading-silk {
-    top: 0;
-    right: 0;
-}
-
-.uploading-box {
-    width: 503px;
-    height: 841px;
-    .l(503px, 276px)
-}
-
-.uploading-b {
-    width: 503px;
-    height: 841px;
-    .l(503px, 276px)
-}
-
-.uploading-picture {
-    left: 126px;
-    top: 279px;
-    width: 497px;
-    height: 835px;
-    position: absolute;
     overflow: hidden;
-}
 
-.uploading-picture img {
-    pointer-events: auto;
-    z-index: 10;
-    position: relative;
-}
-
-.uploading-camera {
-    width: 50px;
-    height: 54px;
-    bottom: -27px;
-    left: 50%;
-    margin-left: -50px/2;
-    z-index: 10;
-}
-
-// 照片样式
-.photograph {
-    width: 100%;
-    height: 1424px;
-    top: 0;
-    left: 0;
-overflow: hidden;
     ul {
         width: 513px;
         height: 98px;
@@ -542,127 +488,166 @@ overflow: hidden;
             left: 0px;
             top: -300px;
         }
+
+
+    }
+
+    .uploading-box {
+        .uploading-text1 {
+            right: 21px;
+            top: 47px;
+            z-index: 10;
+        }
+
+        // 相册 2
+        .uploading-text2-top {
+            top: 31px;
+            left: 35px;
+            z-index: 10;
+        }
+
+        .uploading-text2-botton {
+            bottom: 27px;
+            left: 50%;
+            position: absolute;
+            margin-left: -185px;
+            z-index: 10;
+        }
+
+        // 相册 3
+        .uploading-text3-top {
+            top: 17px;
+            left: 13px;
+            z-index: 10;
+        }
+
+        .uploading-text3-botton {
+            top: 636px;
+            left: 105px;
+            z-index: 10;
+        }
+
+        // 相册 4
+        .uploading-text4-top {
+            top: 617px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        .uploading-text4-botton {
+            top: 731px;
+            right: 105px;
+            z-index: 10;
+        }
+
+        // 相册 5
+        .uploading-text5-top {
+            top: 37px;
+            left: 105px;
+            z-index: 10;
+        }
+
+        .uploading-text5-botton {
+            top: 629px;
+            right: 45px;
+            z-index: 10;
+        }
+
+        .share {
+            width: 100vw;
+            height: 100vh;
+            background: url(../img/share-bJ.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .uploading-start {
+        left: 36px;
+        top: 52px;
+    }
+
+    .uploading-silk {
+        top: 0;
+        right: 0;
+    }
+
+    .uploading-box {
+        width: 503px;
+        height: 841px;
+        top: 0;
+        left: 0;
+    }
+
+    .uploading-b {
+        width: 503px;
+        height: 841px;
+        top: 0;
+        left: 0;
     }
 
 
 
-}
+    .uploading-camera {
+        width: 50px;
+        height: 54px;
+        bottom: -27px;
+        left: 50%;
+        margin-left: -50px/2;
+        z-index: 10;
+    }
 
-.photograph-input {
-    width: 50px;
-    height: 45px;
-    overflow: hidden;
-    position: absolute;
-    top: 1095px;
-    left: 50%;
-    z-index: 10;
-    margin-left: -50px/2;
-
-    input {
-        width: 70px;
-        height: 65px;
+    .photograph-input {
+        width: 50px;
+        height: 45px;
+        overflow: hidden;
         position: absolute;
-        top: -10px;
-        font: 0px arial, transparent !important;
-        color: transparent !important;
-        background: transparent !important;
+        top: 815px;
+        left: 50%;
+        z-index: 10;
+        margin-left: -50px/2;
+
+        input {
+            width: 70px;
+            height: 65px;
+            position: absolute;
+            top: -10px;
+            font: 0px arial, transparent !important;
+            color: transparent !important;
+            background: transparent !important;
+        }
     }
 }
 
-// 相册 1
-.uploading-text1 {
-    right: 21px;
-    top: 47px;
-    z-index: 10;
-}
-
-// 相册 2
-.uploading-text2-top {
-    top: 31px;
-    left: 35px;
-    z-index: 10;
-}
-
-.uploading-text2-botton {
-    bottom: 27px;
+.compoundImg {
+    width: 504px;
+    height: 844px;
+    top: 276px;
     left: 50%;
     position: absolute;
-    margin-left: -185px;
-    z-index: 10;
+    margin-left: -251.5px;
 }
 
-// 相册 3
-.uploading-text3-top {
-    top: 17px;
-    left: 13px;
-    z-index: 10;
-}
-
-.uploading-text3-botton {
-    top: 636px;
-    left: 105px;
-    z-index: 10;
-}
-
-// 相册 4
-.uploading-text4-top {
-    top: 617px;
-    left: 10px;
-    z-index: 10;
-}
-
-.uploading-text4-botton {
-    top: 731px;
-    right: 105px;
-    z-index: 10;
-}
-
-// 相册 5
-.uploading-text5-top {
-    top: 37px;
-    left: 105px;
-    z-index: 10;
-}
-
-.uploading-text5-botton {
-    top: 629px;
-    right: 45px;
-    z-index: 10;
-}
-
-.share {
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/share-bJ.png);
+.uploading-picture {
+    width: 500px;
+    height: 835px;
     position: absolute;
-    top: 0;
-    left: 0;
+    overflow: hidden;
 }
 
-// 分享页
-.share-btn {
-    width: 75px;
-    height: 45px;
-    right: 37px;
-    top: 40px;
-    position: absolute;
+.uploading-picture>img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.share-save {
-    width: 298px;
-    height: 100px;
-    top: 1221px;
-    left: 70px;
-    position: absolute;
+.uploading-picture img {
+    pointer-events: auto;
+    z-index: 10;
+    position: relative;
 }
 
-.share-ranking {
-    width: 298px;
-    height: 100px;
-    top: 1221px;
-    left: 362px;
-    position: absolute;
-}
 
 // 排行榜
 .rankingList {
@@ -773,29 +758,65 @@ overflow: hidden;
         .l(416px, 49px)
     }
 
+    .item2-X {
+        width: 24px;
+        height: 24px;
+        right: 12px;
+        top: 14px;
+        position: absolute;
+    }
+
     .share-btn {
         width: 75px;
         height: 45px;
-        top: 155px;
+        top: 144px;
         position: absolute;
         left: 50%;
         margin-left: -37.5px;
     }
 }
 
-// 合成图片
-.compound {
+.shareIageImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+// 分享图片
+.shareIage {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
 
     .result-img {
-        opacity: 0;
-        z-index: 999;
+        width: 504px;
+        height: 844px;
+        top: 274px;
+        left: 50%;
+        position: absolute;
+        margin-left: -251.5px;
     }
+
+    .share-save {
+        width: 298px;
+        height: 146px;
+        top: 1220px;
+        left: 66px;
+        position: absolute;
+
+    }
+
+    .share-ranking {
+        width: 298px;
+        height: 146px;
+        top: 1220px;
+        left: 362px;
+        position: absolute;
+
+    }
+
 }
 
 // 中
@@ -1103,16 +1124,18 @@ overflow: hidden;
         margin-top: -720px/2;
     }
 
-    .conter {
+    .shareIage,
+    .uploading {
         overflow: hidden;
-        height: 1412px;
+        height: 1206px;
     }
 
-    .compound,
-    .photograph {
+    .shareIage,
+    .uploading {
         .conter {
             overflow: hidden;
-            height: 1204px;
+            height: 1359px;
+
             transform: scaleY(0.85);
             top: -107px;
         }
@@ -1125,27 +1148,30 @@ overflow: hidden;
         }
     }
 
-    .compound,
-    .photograph {
+    .shareIage,
+    .uploading {
 
         .share-save,
         .share-ranking,
         .rule-btn {
-            top: 1020px;
+            top: 1220px;
 
         }
     }
 
-    .photograph-input {
+    .uploading-input {
         top: 909px;
     }
-
+    .uploading-box{
+        width: 503px !important;
+        height: 714px !important;
+    }
     .uploading {
         overflow: hidden;
 
         .conter {
             transform: scaleY(.85);
-            top: -86px;
+            top: -102px;
         }
     }
 
@@ -1156,10 +1182,6 @@ overflow: hidden;
         }
     }
 
-    .uploading-picture {
-        top: 279px;
-        height: 835px;
-    }
 
     .uploading-silk {
         top: -5px;

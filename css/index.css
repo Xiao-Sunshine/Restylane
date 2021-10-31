@@ -399,65 +399,14 @@ html {
 }
 .uploading {
   width: 100vw;
-  height: 100vh;
+  height: 1424px;
   background: url(../img/rankingList-bj.png);
   position: absolute;
   top: 0;
   left: 0;
-}
-.uploading-start {
-  left: 36px;
-  top: 52px;
-}
-.uploading-silk {
-  top: 0;
-  right: 0;
-}
-.uploading-box {
-  width: 503px;
-  height: 841px;
-  top: 276px;
-  left: 50%;
-  position: absolute;
-  margin-left: -251.5px;
-}
-.uploading-b {
-  width: 503px;
-  height: 841px;
-  top: 276px;
-  left: 50%;
-  position: absolute;
-  margin-left: -251.5px;
-}
-.uploading-picture {
-  left: 126px;
-  top: 279px;
-  width: 497px;
-  height: 835px;
-  position: absolute;
   overflow: hidden;
 }
-.uploading-picture img {
-  pointer-events: auto;
-  z-index: 10;
-  position: relative;
-}
-.uploading-camera {
-  width: 50px;
-  height: 54px;
-  bottom: -27px;
-  left: 50%;
-  margin-left: -25px;
-  z-index: 10;
-}
-.photograph {
-  width: 100%;
-  height: 1424px;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-.photograph ul {
+.uploading ul {
   width: 513px;
   height: 98px;
   top: 158px;
@@ -466,21 +415,21 @@ html {
   position: absolute;
   display: flex;
 }
-.photograph ul li:nth-of-type(1) img:nth-of-type(1) {
+.uploading ul li:nth-of-type(1) img:nth-of-type(1) {
   top: 17px;
   left: 30px;
 }
-.photograph ul li {
+.uploading ul li {
   flex: 1;
   width: 90px;
   position: relative;
   background: url(../img/uploading-barder.png) no-repeat;
 }
-.photograph ul li img:nth-of-type(1) {
+.uploading ul li img:nth-of-type(1) {
   top: 17px;
   left: 19px;
 }
-.photograph ul li img:nth-of-type(2) {
+.uploading ul li img:nth-of-type(2) {
   width: 43px;
   height: 46px;
   top: 50%;
@@ -488,21 +437,104 @@ html {
   margin-top: -23px;
   margin-left: -21.5px;
 }
-.photograph ul .uploading-start {
+.uploading ul .uploading-start {
   left: 0px;
   top: -300px;
 }
-.photograph-input {
+.uploading .uploading-box .uploading-text1 {
+  right: 21px;
+  top: 47px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text2-top {
+  top: 31px;
+  left: 35px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text2-botton {
+  bottom: 27px;
+  left: 50%;
+  position: absolute;
+  margin-left: -185px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text3-top {
+  top: 17px;
+  left: 13px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text3-botton {
+  top: 636px;
+  left: 105px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text4-top {
+  top: 617px;
+  left: 10px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text4-botton {
+  top: 731px;
+  right: 105px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text5-top {
+  top: 37px;
+  left: 105px;
+  z-index: 10;
+}
+.uploading .uploading-box .uploading-text5-botton {
+  top: 629px;
+  right: 45px;
+  z-index: 10;
+}
+.uploading .uploading-box .share {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/share-bJ.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.uploading .uploading-start {
+  left: 36px;
+  top: 52px;
+}
+.uploading .uploading-silk {
+  top: 0;
+  right: 0;
+}
+.uploading .uploading-box {
+  width: 503px;
+  height: 841px;
+  top: 0;
+  left: 0;
+}
+.uploading .uploading-b {
+  width: 503px;
+  height: 841px;
+  top: 0;
+  left: 0;
+}
+.uploading .uploading-camera {
+  width: 50px;
+  height: 54px;
+  bottom: -27px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 10;
+}
+.uploading .photograph-input {
   width: 50px;
   height: 45px;
   overflow: hidden;
   position: absolute;
-  top: 1095px;
+  top: 815px;
   left: 50%;
   z-index: 10;
   margin-left: -25px;
 }
-.photograph-input input {
+.uploading .photograph-input input {
   width: 70px;
   height: 65px;
   position: absolute;
@@ -511,81 +543,29 @@ html {
   color: transparent !important;
   background: transparent !important;
 }
-.uploading-text1 {
-  right: 21px;
-  top: 47px;
-  z-index: 10;
-}
-.uploading-text2-top {
-  top: 31px;
-  left: 35px;
-  z-index: 10;
-}
-.uploading-text2-botton {
-  bottom: 27px;
+.compoundImg {
+  width: 504px;
+  height: 844px;
+  top: 276px;
   left: 50%;
   position: absolute;
-  margin-left: -185px;
-  z-index: 10;
+  margin-left: -251.5px;
 }
-.uploading-text3-top {
-  top: 17px;
-  left: 13px;
-  z-index: 10;
-}
-.uploading-text3-botton {
-  top: 636px;
-  left: 105px;
-  z-index: 10;
-}
-.uploading-text4-top {
-  top: 617px;
-  left: 10px;
-  z-index: 10;
-}
-.uploading-text4-botton {
-  top: 731px;
-  right: 105px;
-  z-index: 10;
-}
-.uploading-text5-top {
-  top: 37px;
-  left: 105px;
-  z-index: 10;
-}
-.uploading-text5-botton {
-  top: 629px;
-  right: 45px;
-  z-index: 10;
-}
-.share {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/share-bJ.png);
+.uploading-picture {
+  width: 500px;
+  height: 835px;
   position: absolute;
-  top: 0;
-  left: 0;
+  overflow: hidden;
 }
-.share-btn {
-  width: 75px;
-  height: 45px;
-  right: 37px;
-  top: 40px;
-  position: absolute;
+.uploading-picture > img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.share-save {
-  width: 298px;
-  height: 100px;
-  top: 1221px;
-  left: 70px;
-  position: absolute;
-}
-.share-ranking {
-  width: 298px;
-  height: 100px;
-  top: 1221px;
-  left: 362px;
-  position: absolute;
+.uploading-picture img {
+  pointer-events: auto;
+  z-index: 10;
+  position: relative;
 }
 .rankingList {
   width: 100%;
@@ -681,25 +661,54 @@ html {
   position: absolute;
   margin-left: -208px;
 }
+.ranking .item2-X {
+  width: 24px;
+  height: 24px;
+  right: 12px;
+  top: 14px;
+  position: absolute;
+}
 .ranking .share-btn {
   width: 75px;
   height: 45px;
-  top: 155px;
+  top: 144px;
   position: absolute;
   left: 50%;
   margin-left: -37.5px;
 }
-.compound {
+.shareIageImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.shareIage {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
-.compound .result-img {
-  opacity: 0;
-  z-index: 999;
+.shareIage .result-img {
+  width: 504px;
+  height: 844px;
+  top: 274px;
+  left: 50%;
+  position: absolute;
+  margin-left: -251.5px;
+}
+.shareIage .share-save {
+  width: 298px;
+  height: 146px;
+  top: 1220px;
+  left: 66px;
+  position: absolute;
+}
+.shareIage .share-ranking {
+  width: 298px;
+  height: 146px;
+  top: 1220px;
+  left: 362px;
+  position: absolute;
 }
 .item-conter {
   top: 0;
@@ -968,14 +977,15 @@ html {
     top: 50%;
     margin-top: -360px;
   }
-  .conter {
+  .shareIage,
+  .uploading {
     overflow: hidden;
-    height: 1412px;
+    height: 1206px;
   }
-  .compound .conter,
-  .photograph .conter {
+  .shareIage .conter,
+  .uploading .conter {
     overflow: hidden;
-    height: 1204px;
+    height: 1359px;
     transform: scaleY(0.85);
     top: -107px;
   }
@@ -983,31 +993,31 @@ html {
     transform: scaleY(0.9);
     top: -70px;
   }
-  .compound .share-save,
-  .photograph .share-save,
-  .compound .share-ranking,
-  .photograph .share-ranking,
-  .compound .rule-btn,
-  .photograph .rule-btn {
-    top: 1020px;
+  .shareIage .share-save,
+  .uploading .share-save,
+  .shareIage .share-ranking,
+  .uploading .share-ranking,
+  .shareIage .rule-btn,
+  .uploading .rule-btn {
+    top: 1220px;
   }
-  .photograph-input {
+  .uploading-input {
     top: 909px;
+  }
+  .uploading-box {
+    width: 503px !important;
+    height: 714px !important;
   }
   .uploading {
     overflow: hidden;
   }
   .uploading .conter {
     transform: scaleY(0.85);
-    top: -86px;
+    top: -102px;
   }
   .rankingList .conter {
     transform: scaleY(0.85);
     top: -103px;
-  }
-  .uploading-picture {
-    top: 279px;
-    height: 835px;
   }
   .uploading-silk {
     top: -5px;

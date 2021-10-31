@@ -23,13 +23,22 @@ $(function () {
         $('.poster').fadeOut();
         $('.index').fadeIn();
     })
+    // 上传图片 点击12345切换样式
+    $('.uploading ul li').click(function () {
+        $(this).siblings().children('.uploading-checked').addClass('dn').siblings().removeClass('dn');
+        $(this).children('.uploading-checked').toggleClass('dn').siblings().toggleClass('dn');
+        $('.uploading-b').fadeIn();
+        var num = $(this).index();
+        $('.uploading-border').eq(num).removeClass('dn').siblings().addClass('dn');
 
-    // 点击上传图片
+    })
+    // 生成海报 点击上传图片
     $('.poster .rule-btn').click(function () {
         $('.poster').fadeOut();
-        $('.photograph').fadeIn();
         $('.uploading').fadeIn();
     })
+    var uploadingH=$('.uploading-box').height();
+    var uploadingW=$('.uploading-box').width();
     $('.photograph-input input').change(function () {
         var files = $('.photograph-input input')[0].files;
         if (files.length <= 0) {
@@ -57,48 +66,53 @@ $(function () {
                     // $('.photograph-input').fadeIn();
                     $('.uploading-picture').fadeIn();
                     $('.uploading-picture img').attr('src', 'http://www.liulongbin.top:3006' + res.url);
-                    //合成图片的js代码
-                    html2canvas(document.querySelector(".compound"), {
-                        useCORS: true,
-                        //使用看到的宽高作为图片的宽高
-                        width: window.innerWidth,
-                        height: window.innerHeight,
-                    }).then(canvas => {
-                        //合成图片放到img中
-                        let src = canvas.toDataURL();
-                        // console.log(src);
-                        $('.result-img').prop('src', src)
-                    });
+                    // 确认上传
+                    $(".uploading .rule-btn").click(function () {
+                        $('.uploading-camera').hide();
+                        $('.uploading').fadeOut();
+                        $(".shareIage").fadeIn();
+                   
+                        //合成图片的js代码
+                        html2canvas(document.querySelector(".compoundImg"), {
+                            useCORS: true,
+                            //使用看到的宽高作为图片的宽高
+                            width: uploadingW,
+                            height: uploadingH,
+                        }).then(canvas => {
+                            //合成图片放到img中
+                            let src = canvas.toDataURL();
+                            // console.log(src);
+                            $('.result-img').prop('src', src)
+                        });
+                    })
                 } else {
                     console.log("添加文件失败!");
                 }
             }
         })
-        // 确认上传
-        $(".photograph .rule-btn").click(function () {
-            $('.share-ranking').fadeIn();
-            $('.share-save').fadeIn();
-            $('.photograph .rule-btn').fadeOut();
-            $('.photograph .uploading-silk').fadeOut();
-            $('.photograph ul').fadeOut();
-            $('.share').fadeIn();
-            $('.uploading-box').fadeIn();
-        })
-    })
 
-    // 照片样式
-    $('.photograph ul li').click(function () {
-        $(this).siblings().children('.uploading-checked').addClass('dn').siblings().removeClass('dn');
-        $(this).children('.uploading-checked').toggleClass('dn').siblings().toggleClass('dn');
-        $('.uploading-b').fadeIn();
-        var num = $(this).index();
-        $('.uploading-border').eq(num).removeClass('dn').siblings().addClass('dn');
+    })
+    // 上传图片 拖拽
+    $('.uploading-picture').on('touchstart', function (e) {
+        var startY = e.targetTouches[0].pageY;
+        var startX = e.targetTouches[0].pageX;
+        var sonX = $(this).children().offset().left;
+        var sonY = $(this).children().offset().top;
+        $('.uploading-picture img').on('touchmove', function (e) {
+            var moveX = e.targetTouches[0].pageX - startX;
+            var moveY = e.targetTouches[0].pageY - startY;
+            $(this).offset({
+                left: sonX + moveX,
+                top: sonY + moveY
+            })
+        })
     })
 
     // 排行样式
     $('.share-ranking').click(function () {
-        $('.photograph').fadeOut();
-        $('.share').fadeOut();
+        $('.shareIage').fadeOut();
+        $('.ranking').fadeIn();
+        $('.popUp').fadeIn();
         $('.rankingList').fadeIn();
     })
     var flag = true;
@@ -137,11 +151,15 @@ $(function () {
     //排行榜 回退
     $('.rankingList .rule-transmit').click(function () {
         $('.rankingList').fadeOut();
-        $('.uploading-picture').fadeIn();
-        $('.photograph').fadeIn();
+        $('.shareIage').fadeIn();
     })
     $('.rankingList').click(function () {
 
+    })
+    // 排行榜弹窗
+    $('.item2-X').click(function () {
+        $(this).fadeOut();
+        $('.popUp').fadeOut();
     })
     // 中
     var layer = layui.layer;
@@ -236,8 +254,8 @@ $(function () {
         $('.code').addClass('tearOut');
     })
     // 找到附近的机构
-    $('.text3').click(function(){
-        
+    $('.text3').click(function () {
+
     })
 })
 
